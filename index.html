@@ -16,49 +16,49 @@
   <script src="https://kit.fontawesome.com/37cff6aa80.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <section class="header-bg">
+  <section class="mt-3">
     <div class="container">
       <header class="d-flex pt-2">
         <img src="images/logo.svg" alt="logo" class="logo" />
         <button class="btn">Try It Free</button>
       </header>
-      <div class="d-flex-lg justify-b mt-3 pb-2">
-        <div class="pt-3 header__content pl-2 pr-2">
+      <div class=" justify-b mt-3 pb-2">
+        <div class="pt-3 header__content">
           <h1>Build The Community<br />Your Fans Will Love</h1>
           <p>
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
-          <button class="btn btn-lg mt-1 mb-3 btn-pink">
+          <button class="btn mt-1 mb-3 btn-pink">
             Get Started For Free
           </button>
         </div>
-        <div class="mb-2 ml-2 mr-2 pb-2 mp-reset">
+        <div class="ml-2 mr-2 pb-2 mp-reset">
           <img
-            src="images/illustration-mockups.svg"
+            src="images/screen-mockups.svg"
             alt="community illustration"
             class="img-fluid"
           />
         </div>
       </div>
-      <div class="stats">
+      <div class="mt-3">
         <div class="stat">
-          <i></i>
-          <h1>1.4k+</h1>
+          <h1 class="stat--1">1.4k+</h1>
           <p>Communities Formed</p>
         </div>
         <div class="stat">
-          <i></i>
-          <h1>2.7m+</h1>
+          <h1 class="stat--2">2.7m+</h1>
           <p>Messages Sent</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="container pt-3">
-    <div class="card d-flex-lg">
+  <section class="pt-1">
+
+    <img src="images/bg-section-top-mobile-1.svg" alt="" class="img-fluid curve">
+    <div class="card d-flex-lg card--bg">
       <img
         src="images/illustration-grow-together.svg"
         alt="together illustration"
@@ -73,6 +73,7 @@
         </p>
       </div>
     </div>
+    <img src="images/bg-section-bottom-mobile-1.svg" alt="" class="img-fluid curve">
 
     <div class="card d-flex-lg">
       <img
@@ -87,9 +88,10 @@
           online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </div>
-      </div>
+    </div>
 
-    <div class="card d-flex-lg">
+    <img src="images/bg-section-top-mobile-2.svg" alt="" class="img-fluid curve">
+    <div class="card card--bg d-flex-lg">
       <img
         src="images/illustration-your-users.svg"
         alt="users illustration"
@@ -104,23 +106,33 @@
         </p>
       </div>
     </div>
+    <img src="images/bg-section-bottom-mobile-2.svg" alt="" class="img-fluid curve">
 
-    <div class="card card-cta mt-7">
+    <div class="card card-cta mt-2 mb-3">
       <h2>Ready To Build Your Community?</h2>
-      <button class="btn btn-md btn-pink">Get Started For Free</button>
+      <button class="btn btn-pink">Get Started For Free</button>
     </div>
   </section>
 
+  <img src="images/bg-footer-top-mobile.svg" alt="" class="img-fluid curve">
   <footer class="footer-bg">
     <div class="container">
-      <img src="images/logo-footer.svg" alt="logo" class="mb-2" />
+      <div class="newsletter d-flex-2 mb-3">
+        <p>NEWSLETTER</p>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address</p>
+          <form action="#" class="footer__flex">
+            <input type="email" name="email" id="email" aria-label="email address" required>
+            <input type="button" value="Subscribe">
+          </form>
+      </div>
+
+      <img src="images/logo-footer.svg" alt="logo"/>
       <div class="footer__flex">
         <div class="footer__info">
-          <div class="location">
-            <span class="icon location-icon"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 
           <div class="phone">
             <span class="icon phone-icon"></span>
@@ -133,30 +145,20 @@
           </div>
         </div>
 
-        <div class="d-flex-2 footer__navlink--1 mt-2">
-          <h3>Newsletter</h3>
-          <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-            send you spam or pass on your email address</p>
-            <input type="email" name="email" id="email">
-            <input type="button" value="Subscribe">
-        </div>
 
-        <div class="social">
-          <i class="fab fa-facebook-f icon-border"></i>
-          <i class="fab fa-twitter icon-border"></i>
-          <i class="fab fa-instagram icon-border"></i>
+        <div class="social mt-2">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
         </div>
       </div>
-      <p class="copyright">
-        &copy; Copyright 2018 Huddle. All rights reserved.
-      </p>
     </div>
   </footer> 
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="http://github.com/mbcod3">Muhammad Bilal</a>.
     </p>
   </footer>
 </body>

@@ -1,11 +1,10 @@
 /*--- Typography ---*/
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700&display=swap");
 
 html {
-  font-size: 18px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -24,7 +23,9 @@ section,
 
 body {
   margin: 0;
+  color: hsl(192, 100%, 9%)
 }
+
 .container {
   max-width: 100%;
   padding-right: 15px;
@@ -36,6 +37,11 @@ body {
 
 .img-fluid {
   width: 100%;
+  margin-bottom: 0;
+}
+
+.curve {
+  display: block;
 }
 
 /* --- Header --- */
@@ -45,23 +51,52 @@ body {
   height: 27px;
 }
 
-.header-bg {
-  background: url(images/bg-hero-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: right 0;
-  background-color: hsl(193, 100%, 96%);
+.stat h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  position: relative;
 }
+
+.stat p {
+  color: hsl(208, 11%, 55%);
+  margin-top: 0;
+}
+
+.stat h1::before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  width: 50px;
+  height: 50px;
+}
+
+.stat--1::before {
+  background: url(images/icon-communities.svg) no-repeat;
+}
+
+.stat--2::before {
+  background: url(images/icon-messages.svg) no-repeat;
+  background-size: contain;
+  height: 35px !important;
+}
+
+.stat:nth-child(1) {
+  margin-bottom: 7rem;
+}
+
 
 /* --- Cards --- */
 
 .card {
-  border: 1px solid hsla(209, 38%, 83%, 0.233);
-  box-shadow: 0 0 6px 6px hsla(208, 25%, 78%, 0.137);
-  border-radius: 15px;
   margin-bottom: 3rem;
   padding: 2rem;
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
+}
+
+.card--bg {
+  background-color: #F6FBFF;
+  margin-bottom: 0;
 }
 
 .card p {
@@ -72,7 +107,6 @@ body {
 .card-cta {
   margin: auto !important;
   padding-bottom: 2.5rem;
-  margin-bottom: -80px !important;
   background-color: #fff;
 }
 
@@ -81,8 +115,40 @@ body {
 .footer-bg {
   background-color: hsl(192, 100%, 9%);
   color: hsl(193, 100%, 96%);
-  padding-top: 10em;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   font-size: 1.25rem;
+}
+
+.newsletter p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.newsletter p:nth-child(2) {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.newsletter input[type="button"] {
+  margin-top: 1rem;
+  align-self: flex-end;
+  padding: .9rem 2rem;
+  border: none;
+  outline: none;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .footer__flex {
@@ -90,19 +156,8 @@ body {
   flex-direction: column;
 }
 
-.footer__navlink--1 a,
-.footer__navlink--2 a {
-  text-decoration: none;
-  color: hsl(193, 100%, 96%);
-  margin-bottom: 2rem;
-}
 
 /* --- Icons --- */
-
-.social {
-  text-align: center;
-  
-}
 
 .phone,
 .location,
@@ -110,10 +165,6 @@ body {
   display: flex;
   align-items: center;
   align-content: center;
-}
-
-.location-icon {
-  background: url(images/icon-location.svg);
 }
 
 .email-icon {
@@ -131,20 +182,13 @@ body {
   margin-bottom: -5px;
 }
 
-.icon-border {
-  margin: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.849);
-  padding: 10px;
-  border-radius: 50%;
+.social {
+  font-size: 1.7rem;
 }
 
-.social i:nth-child(1) {
-  padding-left: 11px;
-  padding-right: 13px;
-}
-
-.copyright {
-  font-size: 0.85rem;
+.social i:nth-child(2) {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* --- Utilities --- */
@@ -218,8 +262,7 @@ body {
 
 .btn {
   display: inline-block;
-  font-weight: 600;
-  color: #212529;
+  color: hsl(322, 100%, 66%);
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -233,24 +276,19 @@ body {
   padding: 0.75em 3em;
   line-height: 1.5;
   border-radius: 30px;
-  box-shadow: 0 3px 2px hsla(209, 11%, 55%, 0.226);
-  border-color: hsla(209, 11%, 55%, 0.267);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-color: hsl(322, 100%, 66%);
 }
 
-.btn-lg {
-  padding: 0.8em 3em;
-  font-size: 0.9rem;
-}
-
-.btn-md {
-  padding: 1em 4em;
-}
 
 .btn-pink {
-  background-color: hsla(322, 100%, 66%, 0.815);
+  box-shadow: 0 3px 2px hsla(209, 11%, 55%, 0.226);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: hsl(322, 100%, 66%);
   color: white;
+  font-weight: 600;
+  padding: 1em 4em;
+  font-size: 14px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -280,6 +318,8 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
+
+
 
 /* --- Media Queries ---- */
 
