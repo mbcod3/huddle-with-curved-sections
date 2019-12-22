@@ -24,7 +24,7 @@
       </header>
       <div class=" justify-b mt-3 pb-2">
         <div class="pt-3 header__content">
-          <h1>Build The Community<br />Your Fans Will Love</h1>
+          <h1>Build The Community<br /> Your Fans Will Love</h1>
           <p>
             Huddle re-imagines the way we build communities. You have a voice,
             but so does your audience. Create connections with your users as you
@@ -38,11 +38,11 @@
           <img
             src="images/screen-mockups.svg"
             alt="community illustration"
-            class="img-fluid"
+            class="img-fluid mockup"
           />
         </div>
       </div>
-      <div class="mt-3">
+      <div class="mt-3 d-flex-md">
         <div class="stat">
           <h1 class="stat--1">1.4k+</h1>
           <p>Communities Formed</p>
@@ -57,56 +57,74 @@
 
   <section class="pt-1">
 
-    <img src="images/bg-section-top-mobile-1.svg" alt="" class="img-fluid curve">
-    <div class="card d-flex-lg card--bg">
-      <img
-        src="images/illustration-grow-together.svg"
-        alt="together illustration"
-        class="img-fluid mw-85 mb-2"
-      />
-      <div class="card__content">
-        <h3>Grow Together</h3>
-        <p>
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
+    <picture>
+      <source media="(min-width: 992px)" srcset="images/bg-section-top-desktop-1.svg">
+      <img src="images/bg-section-top-mobile-1.svg" alt="" class="img-fluid curve">
+    </picture>
+    <div class="card  card--bg">
+      <div class="card__container d-flex-lg">
+        <img
+          src="images/illustration-grow-together.svg"
+          alt="together illustration"
+          class="img-fluid mw-85 mb-2"
+        />
+        <div class="card__content">
+          <h3>Grow Together</h3>
+          <p>
+            Generate meaningful discussions with your audience and build a strong,
+            loyal community. Think of the insightful conversations you miss out on
+            with a feedback form.
+          </p>
+        </div>
       </div>
     </div>
-    <img src="images/bg-section-bottom-mobile-1.svg" alt="" class="img-fluid curve">
+    <picture>
+      <source media="(min-width: 992px)" srcset="images/bg-section-bottom-desktop-1.svg">
+      <img src="images/bg-section-bottom-mobile-1.svg" alt="" class="img-fluid curve">
+    </picture>
 
-    <div class="card d-flex-lg">
-      <img
-        src="images/illustration-flowing-conversation.svg"
-        alt="conversation illustration"
-        class="img-fluid mw-85 mb-2"
-      />
-      <div class="card__content card__content--1">
-        <h3>Flowing Conversations</h3>
-        <p>
-          You wouldn't paginate a conversation in real life, so why do it
-          online? Our threads have just-in-time loading for a more natural flow.
-        </p>
+    <div class="card">
+      <div class="card__container d-flex-lg">
+        <img
+          src="images/illustration-flowing-conversation.svg"
+          alt="conversation illustration"
+          class="img-fluid mw-85 mb-2"
+        />
+        <div class="card__content card__content--1">
+          <h3>Flowing Conversations</h3>
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural flow.
+          </p>
+        </div>
       </div>
     </div>
 
-    <img src="images/bg-section-top-mobile-2.svg" alt="" class="img-fluid curve">
-    <div class="card card--bg d-flex-lg">
-      <img
-        src="images/illustration-your-users.svg"
-        alt="users illustration"
-        class="img-fluid mw-85 mb-2"
-      />
-      <div class="card__content">
-        <h3>Your Users</h3>
-        <p>
-          It takes no time at all to integrate Huddle with your app's
-          authentication solution. This means, once signed in to your app, your
-          users can start chatting immediately.
-        </p>
+    <picture>
+      <source media="(min-width: 992px)" srcset="images/bg-section-top-desktop-2.svg">
+      <img src="images/bg-section-top-mobile-2.svg" alt="" class="img-fluid curve">
+    </picture>
+    <div class="card card--bg">
+      <div class="card__container d-flex-lg">
+        <img
+          src="images/illustration-your-users.svg"
+          alt="users illustration"
+          class="img-fluid mw-85 mb-2"
+        />
+        <div class="card__content">
+          <h3>Your Users</h3>
+          <p>
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app, your
+            users can start chatting immediately.
+          </p>
+        </div>
       </div>
     </div>
-    <img src="images/bg-section-bottom-mobile-2.svg" alt="" class="img-fluid curve">
+    <picture>
+      <source media="(min-width: 992px)" srcset="images/bg-section-bottom-desktop-2.svg">
+      <img src="images/bg-section-bottom-mobile-2.svg" alt="" class="img-fluid curve">
+    </picture>
 
     <div class="card card-cta mt-2 mb-3">
       <h2>Ready To Build Your Community?</h2>
@@ -114,21 +132,24 @@
     </div>
   </section>
 
-  <img src="images/bg-footer-top-mobile.svg" alt="" class="img-fluid curve">
+  <picture>
+    <source media="(min-width: 992px)" srcset="images/bg-footer-top-desktop.svg">
+    <img src="images/bg-footer-top-mobile.svg" alt="" class="img-fluid curve">
+  </picture>
   <footer class="footer-bg">
-    <div class="container">
+    <div class="container footer-flex">
       <div class="newsletter d-flex-2 mb-3">
         <p>NEWSLETTER</p>
         <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
           send you spam or pass on your email address</p>
-          <form action="#" class="footer__flex">
+          <form action="#" class="form__flex">
             <input type="email" name="email" id="email" aria-label="email address" required>
             <input type="button" value="Subscribe">
           </form>
       </div>
 
-      <img src="images/logo-footer.svg" alt="logo"/>
-      <div class="footer__flex">
+      <div>
+        <img src="images/logo-footer.svg" alt="logo"/>
         <div class="footer__info">
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -155,11 +176,9 @@
     </div>
   </footer> 
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="http://github.com/mbcod3">Muhammad Bilal</a>.
-    </p>
-  </footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="http://github.com/mbcod3">Muhammad Bilal</a>.
+  </p>
 </body>
 </html>
